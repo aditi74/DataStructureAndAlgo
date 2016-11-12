@@ -17,14 +17,25 @@ import java.util.Queue;
  */
 public class SumLeftLeaves {
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
 
     public int sumOfLeftLeaves(TreeNode root) {
+        int sum=0;
+        if (root!=null)
+        {
+            if (root.left!=null && (root.left.left==null && root.left.right==null ))
+                sum+= root.left.val;
+
+            sum+=   sumOfLeftLeaves(root.left) ;
+            sum+= sumOfLeftLeaves(root.right) ;
+
+
+        }
+
+        return sum;
+
+    }
+
+    /*public int sumOfLeftLeaves(TreeNode root) {
         Queue<TreeNode> queue= new LinkedList<>();
         //queue.add
         if (root==null)
@@ -53,5 +64,5 @@ public class SumLeftLeaves {
         return sum;
 
 
-    }
+    }*/
 }
