@@ -8,7 +8,7 @@ package LeetCode;
  Given 1->1->2->3->3, return 1->2->3.
 
 
- * Created by vikram on 13/11/16.
+ * Created by aditi on 13/11/16.
  */
 public class RemoveDuplicatesFromSortedlIst {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 14/11/16.
+ * Created by aditi on 14/11/16.
  */
 public class PowerofThree {
     public static void main(String[] args) {

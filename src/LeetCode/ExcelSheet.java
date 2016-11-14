@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 13/11/16.
+ * Created by aditi on 13/11/16.
  * Given a column title as appear in an Excel sheet, return its corresponding column number.
 
  A -> 1

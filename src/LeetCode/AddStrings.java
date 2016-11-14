@@ -2,7 +2,7 @@ package LeetCode;
 
 /**
  *  Given two non-negative numbers num1 and num2 represented as string, return the sum of num1 and num2.
- * Created by vikram on 13/11/16.
+ * Created by aditi on 13/11/16.
  */
 public class AddStrings {
     public static void main(String[] args) {

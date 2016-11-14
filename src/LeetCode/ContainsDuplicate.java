@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.HashSet;
 
 /**
- * Created by vikram on 13/11/16.
+ * Created by aditi on 13/11/16.
  * Given an array of integers, find if the array contains any duplicates. Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
  */
 public class ContainsDuplicate {

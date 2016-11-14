@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 3/11/16.
+ * Created by aditi on 3/11/16.
  * Write a function that takes a string as input and returns the string reversed.
  * Given s = "hello", return "olleh".
  */

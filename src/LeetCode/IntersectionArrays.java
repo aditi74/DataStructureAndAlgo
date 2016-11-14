@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.jar.Pack200;
 
 /**
- * Created by vikram on 13/11/16.
+ * Created by aditi on 13/11/16.
  *
  * Given two arrays, write a function to compute their intersection.
 

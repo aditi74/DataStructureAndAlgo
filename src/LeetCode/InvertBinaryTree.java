@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 3/11/16.
+ * Created by aditi on 3/11/16.
  *
  * Invert a binary tree.
 

@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 13/11/16.
+ * Created by aditi on 13/11/16.
  */
 public class ReverseList {
     public static void main(String[] args) {
