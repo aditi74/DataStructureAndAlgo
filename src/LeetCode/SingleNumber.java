@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 3/11/16.
+ * Created by aditi on 3/11/16.
  * Given an array of integers, every element appears twice except for one. Find that single one.
  * 2 2 1 3 4 3 4
  * 1

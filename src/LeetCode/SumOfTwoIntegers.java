@@ -1,7 +1,7 @@
 package LeetCode;
 
 /**
- * Created by vikram on 3/11/16.
+ * Created by aditi on 3/11/16.
  * Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
  */
 public class SumOfTwoIntegers {
