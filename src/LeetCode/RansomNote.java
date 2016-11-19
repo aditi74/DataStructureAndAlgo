@@ -13,7 +13,7 @@ package LeetCode;
  canConstruct("aa", "ab") -> false
  canConstruct("aa", "aab") -> true
  */
-public class RansomeNote {
+public class RansomNote {
 
     public boolean canConstruct(String ransomNote, String magazine) {
      int[] alphabets= new int[26];

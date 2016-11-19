@@ -11,12 +11,19 @@ public class ClimbingStairs {
     public static void main(String[] args) {
         ClimbingStairs climbingStairs= new ClimbingStairs();
         int[] arr= new int[101];
-        System.out.println(climbingStairs.climbStairs(3));
+        System.out.println(climbingStairs.climbStairs(4));
     }
 
     public int climbStairs(int n) {
         int[] dyn= new int[n+1];
-
+        for (int i=0;i<=n;i++)
+        {
+            dyn[i]=-1;
+        }
+       /* dyn[0]=0;
+        dyn[1]=1;
+        dyn[2]=2;
+*/
         return dynClimbingStairs(n,dyn);
 
     }
@@ -24,16 +31,20 @@ public class ClimbingStairs {
     public int dynClimbingStairs(int n,int[] dyn)
     {
 
-        if (n==0|| n==1)
-            return 1;
-
-        else if (dyn[n]!=0)
-            return dyn[n];
-
-        else
+        if (n<3)
         {
-            dyn[n]= dynClimbingStairs(n-1,dyn)+dynClimbingStairs(n-2,dyn);
+            dyn[n]=n;
             return dyn[n];
         }
+        if (dyn[n]!=-1)
+
+            return dyn[n];
+        else
+        {
+            dyn[n]=dynClimbingStairs(n-1,dyn)+dynClimbingStairs(n-2,dyn);
+            return dyn[n];
+
+        }
+
     }
 }
