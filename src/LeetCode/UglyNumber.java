@@ -1,5 +1,7 @@
 package LeetCode;
 
+import com.sun.corba.se.impl.orbutil.graph.Graph;
+
 /**
  * Created by vikram on 16/11/16.
  *  Write a program to check whether a given number is an ugly number.
@@ -24,6 +26,7 @@ public class UglyNumber {
       if (num%5==0)
           return isUgly(num/5);
       else
+
           return false;
 
 

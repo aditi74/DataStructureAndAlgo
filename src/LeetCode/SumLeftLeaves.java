@@ -25,7 +25,7 @@ public class SumLeftLeaves {
             if (root.left!=null && (root.left.left==null && root.left.right==null ))
                 sum+= root.left.val;
 
-            sum+=   sumOfLeftLeaves(root.left) ;
+            sum+= sumOfLeftLeaves(root.left) ;
             sum+= sumOfLeftLeaves(root.right) ;
 
 
