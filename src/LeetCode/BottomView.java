@@ -63,7 +63,7 @@ public class BottomView {
             map.put(counter,node.val);
         }
         else
-            map.put(counter,node.val);
+            map.put(counter,node.val);  
 
         bottomView(node.left,counter-1);
         bottomView(node.right,counter+1);
