@@ -1,6 +1,8 @@
 package DynamicProgramming;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 /**
  * Created by vikram on 17/11/16.
@@ -18,54 +20,63 @@ public class WordBreakProblem {
     HashSet<String> set = new HashSet<>();
 
     public static void main(String[] args) {
+       WordBreakProblem wordBreakProblem= new WordBreakProblem();
+        List<String> list= new ArrayList<>();
+        list.add("leet");
+        list.add("code");
+        System.out.println(wordBreakProblem.wordBreak("leetcode",list));
+
 
 
     }
 
 
-    public boolean checkWord(String string)
+
+    public boolean wordBreak(String s, List<String> wordDict)
     {
-        //arrays, dynamic, heaps, IDeserve, learn, learning, linked, list, platform, programming, stacks, trees
-        set.add("arrays");
-        set.add("dynamic");
-        set.add("heaps");
-        set.add("IDeserve");
-        set.add("learn");
-        set.add("learning");
-        set.add("linked");
-        set.add("list");
-        set.add("platform");
-        set.add("programming");
-        set.add("stacks");
-        set.add("trees");
+        HashSet<String> set = new HashSet<>();
 
-        boolean[] validWords= new boolean[string.length()];
+        if (s.length()==0)
+            return false;
+        for (int i=0;i<wordDict.size();i++)
+        {
+            set.add(wordDict.get(i));
+        }
 
-        for(int i=0;i<string.length();i++)
-           {
-             if(set.contains(string.substring(0,i+1)));
-               {
-                   validWords[i]=true;
-               }
-               if (validWords[i]==true && (i==string.length()-1))
-                   return true;
+        boolean[] word = new boolean[s.length()];
 
-               if (validWords[i]==true)
-               {
-                   for (int j=i+1;j<string.length();j++)
-                   {
-                       if (set.contains(string.substring(i+1,j+1)))
-                       {
-                           validWords[j]=true;
-                       }
-                       if (j==string.length()-1 && validWords[j]==true)
-                           return true;
-                   }
-               }
+        int m=0;
+        while (m<s.length())
+        {
+            for (int n=m+1;n<s.length();n++)
+            {
+                if (set.contains(s.substring(m,n+1)))
+                {
+                    word[n]=true;
+                    if (n==s.length()-1)
+                    {
+                        return word[s.length()-1];
+                    }
+                    m=n+1;
+                    n=m;
+                }
+
+                if (n==s.length()-1)
+                    return word[s.length()-1];
+
+            }
 
 
-           }
-         return false;
+
+        }
+        return word[s.length()-1];
+
+
 
     }
+
+    /*public boolean usingDPWordCheck(String string)
+    {
+
+    }*/
 }
