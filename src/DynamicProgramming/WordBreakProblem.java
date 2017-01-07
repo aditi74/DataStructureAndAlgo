@@ -31,7 +31,7 @@ public class WordBreakProblem {
     }
 
 
-
+//O n2 trivial solution
     public boolean wordBreak(String s, List<String> wordDict)
     {
         HashSet<String> set = new HashSet<>();
