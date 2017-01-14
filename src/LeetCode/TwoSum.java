@@ -16,6 +16,8 @@ import java.util.HashMap;
  */
 public class TwoSum {
 
+  // Two pass
+   // first putting the elements and then checking for it
 
     public int[] twoSum(int[] nums, int target) {
 
@@ -44,5 +46,34 @@ public class TwoSum {
         }
         Arrays.sort(result);
         return result;
+    }
+
+
+
+    //while putting map
+
+    public int[] twoSumWithOnePass(int[] nums,int target)
+    {
+        int[] result= new int[2];
+        int currTarget=0;
+
+        HashMap<Integer,Integer> map= new HashMap<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            currTarget =target-nums[i];
+            if (map.containsKey(currTarget))
+            {
+                result[0]=map.get(currTarget);
+                result[1]=i;
+                return result;
+            }
+            map.put(nums[i],i);
+
+
+
+        }
+    return result;
+
+
     }
 }
