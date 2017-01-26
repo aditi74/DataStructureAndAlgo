@@ -2,8 +2,7 @@ package GraphsQuestions;
 
 import com.sun.corba.se.impl.orbutil.graph.Graph;
 
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by vikram on 25/1/17.
@@ -42,7 +41,7 @@ public class GraphCreation {
 
         GraphCreation graphCreation= new GraphCreation();
         System.out.println(graph.graphNodesList.get(0));
-        graphCreation.DfsGraphs(graph,graph.graphNodesList.get(0));
+        graphCreation.BfsGraphs(graph,graph.graphNodesList.get(0));
 
 
 
@@ -84,6 +83,39 @@ public class GraphCreation {
 
 
 
+
+    public void BfsGraphs(Graphs graphs,Node node)
+    {
+        Queue<Node> queue= new LinkedList<>();
+
+
+        queue.add(node);
+        node.isVisted=true;
+
+        while (!queue.isEmpty())
+        {
+            Node removedNode= queue.remove();
+
+            System.out.println(removedNode.value);
+            ArrayList<Node> neighbors= graphs.getNeighbors(removedNode.value);
+            for (int i=0;i<neighbors.size();i++)
+            {
+                if(!neighbors.get(i).isVisted)
+                {
+                    queue.add(neighbors.get(i));
+                    neighbors.get(i).isVisted=true;
+                }
+
+            }
+
+
+
+
+        }
+
+
+
+    }
 
 
 }
