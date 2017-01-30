@@ -5,7 +5,8 @@ import java.util.Arrays;
 /**
  * Created by vikram on 9/12/16.
  *
- * Objec­tive: Given a rod of length n inches and a table of prices pi, i=1,2,…,n, write an algo­rithm to find the max­i­mum rev­enue rn obtain­able by cut­ting up the rod and sell­ing the pieces.
+ * Objec­tive: Given a rod of length n inches and a table of prices pi, i=1,2,…,n,
+ * write an algo­rithm to find the max­i­mum rev­enue rn obtain­able by cut­ting up the rod and sell­ing the pieces.
 
 
  od lengths are inte­gers and For i=1,2,…,n we know the price pi of a rod of length i inches
