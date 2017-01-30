@@ -11,7 +11,7 @@ package DynamicProgramming;
 public class MinJumPGame {
 
     public static void main(String[] args) {
-        int[] arr= {1,1,2,10,1,1,1,1,1,1,4  };
+        int[] arr= {0,1,3,5,6,8,12,17};
         MinJumPGame minJumPGame= new MinJumPGame();
         System.out.println(minJumPGame.MinJumps(arr));
 
