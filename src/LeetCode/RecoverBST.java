@@ -65,20 +65,12 @@ prev=root;
 
         if (root==null)
            return;
-
         recoverTreeUtil(root);
 
-
-
-        int temp= firstpoint.val;
+      int temp= firstpoint.val;
 
         firstpoint.val= lastpoint.val;
-        lastpoint.val= temp;
-
-
-
-
-
+            lastpoint.val= temp;
 
 
     }
