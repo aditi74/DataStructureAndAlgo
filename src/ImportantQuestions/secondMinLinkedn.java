@@ -46,7 +46,6 @@ public class secondMinLinkedn {
     public int secondMinUtil(TreeNode root)
     {
 
-
         if (root.val== root.left.val)
             return secondMin(root.left,root.val);
 
@@ -58,21 +57,14 @@ public class secondMinLinkedn {
     int min=0;
     public int secondMin(LeetCode.TreeNode root, int rootval)
     {
-
-
-
         if(root.left==null && root.right==null)
-        {
             return root.val;
-        }
-
 
             if (root.val == root.left.val)
                 min= secondMin(root.left,  rootval);
 
             if (root.val == root.right.val)
                min = secondMin(root.right,  rootval);
-
 
             if (root.left.val != rootval) {
                 if (min!= rootval)
@@ -85,13 +77,8 @@ public class secondMinLinkedn {
                 min= Math.min(min,root.right.val);
                 else
                     min=root.right.val;
-
-
             }
-            return min;
 
-
-
-
+        return min;
     }
 }
