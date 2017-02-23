@@ -1,8 +1,6 @@
-package ImportantQuestions;
+package Tree;
 
-import LeetCode.*;
 import LeetCode.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 /**
  * Created by vikram on 23/2/17.
