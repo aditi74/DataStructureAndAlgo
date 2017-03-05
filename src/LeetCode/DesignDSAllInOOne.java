@@ -95,6 +95,7 @@ public class DesignDSAllInOOne {
 
     public int getRandom()
     {
+
         Random random= new Random();
         int num=random.nextInt(arrayList.size());
         return arrayList.get(num);
